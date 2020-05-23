@@ -1,3 +1,6 @@
+# Azure Automation
+In this repository you will find all the PowerShell scripts and the docker containers that I use for automating various things in Azure.
+
 ## Azure SQL Database
 Azure SQL database is Azure's PaaS offering for SQL server. It has everything that you will need, but it lacks the option to start and stop on the server. For many people including me who want to save some $$ on their Azure bill the ability to start and stop SQL server is important. You might only want to run it during business hours or only when you need the instance while retaining the pervious state of the instance. To achieve this, I make of an Azure storage account to save the state of the database and Azure's container instances to destroy and create the SQL server as and when needed. The Azure container instance can be triggered using Azure logic apps or Azure functions.
 
